@@ -1,0 +1,80 @@
+<DOCTYPE html>
+<html>
+<body>
+    <script>
+        'use strict';
+
+        alert("Data Types Examples : ");
+        document.writeln("Number Type" + "<br>");
+        let i = 10;
+        document.writeln("i :" + i + "<br>");
+        document.writeln("=================================================================" + "<br>");
+        document.writeln("When you divide anything by zero see what happens -it will show special numeric value Infinity" + "<br>");
+        let j = 10;
+        let k = 0;
+        document.writeln("division :" + j/k  + "<br>");
+        document.writeln("=================================================================" + "<br>");
+        document.writeln("When you divide non-numberic values by zero see what happens - it will sho NaN : " + "<br>");
+
+        let message = "Hello";
+        let num = 0;
+        document.writeln(message/num + "<br>");
+        
+        document.writeln("=================================================================" + "<br>");
+
+        document.writeln("Second String type : Three ways of string quotes" + "<br>");
+
+        let firstName = "ved";
+        let middleName = 'prakash';
+        let lastName = `Shukle : address
+                        ram Nagar extension
+        `;
+        document.writeln("Double Quotes :" + firstName + "<br>");
+        document.writeln("single Quotes : " + middleName + "<br>");
+        document.writeln("Backtick :" + lastName + "<br>");
+
+          document.writeln("=================================================================" + "<br>");
+
+        document.writeln("Boolean Type");
+
+        let bol = true;
+        let bol1 = false;
+
+        document.writeln("Boolean :" + bol + " " + bol1 + "<br>");
+
+        document.writeln("=================================================================" + "<br>");
+
+        document.writeln("Special Value Null : does not belongs to any types it has its own type :" + "<br>");
+
+        let age = null;
+        document.writeln("Null Example :" + age + "<br>");
+
+        document.writeln("=================================================================" + "<br>");
+
+        document.writeln("Special value undefined : it also similar to null : does not belongs to any types : it has it's own type" + "<br>");
+        document.writeln("It occures when you does not assign values to variables : " + "<br>");
+
+        let number ;
+        document.writeln(number);
+
+        document.writeln("=================================================================" + "<br>");
+        document.writeln("typeof operator");
+        typeof undefined // "undefined"
+
+        typeof 0 // "number"
+
+        typeof true // "boolean"
+
+        typeof "foo" // "string"
+
+        typeof Symbol("id") // "symbol"
+
+        typeof Math // "object"  (1)
+
+        typeof null // "object"  (2)
+
+        typeof alert // "function"  (3)
+
+    </script>
+</body>
+</html>

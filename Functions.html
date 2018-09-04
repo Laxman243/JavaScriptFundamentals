@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let a = prompt('enter number?','');
+       function showMessage(a)
+       {
+           if (a < 10)
+           {
+               alert('below 10 :');
+           }
+           else if ( a > 10)
+           {
+               alert('above 10 :');
+           }
+           else
+           {
+            alert("done");
+           }
+       }
+       showMessage(a);
+
+       alert("Double Parameter Example");
+
+       function Double(a , b = "no text given") // b became optional here, it at all you dont supply second argument also function will execuet by taking default value in it
+       {
+            alert( a + " " + b);
+            
+       }
+       Double('laxman', 'shukla');
+       
+    </script>
+    
+</body>
+</html>

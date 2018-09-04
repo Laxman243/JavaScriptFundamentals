@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    'use strict';
+    let year = prompt('In which year was ECMAScript-2015 specification published?', '');
+    
+    if (year < 2015) {
+      alert( 'Too early...' );
+    } else if (year > 2015) {
+      alert( 'Too late' );
+    } else {
+      alert( 'Exactly!' );
+    }
+
+    alert("Ternary Operator Example ...");
+
+    'use strict';
+    let accessAllowed;
+    let age = prompt('How old are you?', '');
+    
+    if (age > 18) {
+      accessAllowed = true;
+    } else {
+      accessAllowed = false;
+    }
+    
+    alert(accessAllowed);
+
+    alert("Multilple ...");
+
+    let age1 = prompt('age?', 18);
+    let message = (age1 < 3) ? 'Hi Baby!' :
+                    (age1 < 18) ? 'Hello..' :
+                    (age < 100) ? 'Greetings !' :
+                    'unusual age ';
+    alert(message);
+    alert("Task Started...");
+    let task = prompt('?' < '');
+    let exe = (task < 4) ? 'Below' :
+                (task > 4) ? 'Over' :
+                'exactly ..' ;
+                alert(exe);
+  </script>
+</body>
+
+</html>

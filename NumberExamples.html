@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+                'use strict';
+                alert( Number("   123   ") ); // 123
+                alert( Number("123z") );      // NaN (error reading a number at "z")
+                alert( Number(true) );        // 1
+                alert( Number(false) );       // 0
+
+                  alert( "Concatinating String : " + 1 + '2' ); // '12' (string to the right)
+                  alert( "Concatinating String : " + '1' + 2 ); // '12' (string to the left)
+
+                  alert( Boolean(1 ) ); // true
+                  alert( Boolean( 0 ) ); // false
+    
+                 alert( Boolean("hello") ); // true
+                 alert( Boolean("") ); // false
+
+                 alert( Boolean("0") ); // true
+                 alert( Boolean(" ") ); // spaces, also true (any non-empty string is true)
+
+                 document.writeln("Task 1 " + "<br>");
+
+                 document.writeln("" + 1 + 0);
+                document.writeln("" - 1 + 0);
+                document.writeln(true + false);
+                document.writeln(6 / "3");
+                document.writeln("2" * "3");
+                document.writeln(4 + 5 + "px");
+                document.writeln("$" + 4 + 5);
+                document.writeln("4" - 2);
+                document.writeln("4px" - 2);
+                document.writeln(7 / 0);
+                document.write("  -9\n" + 5);
+                document.writeln("  -9\n" - 5);
+                document.writeln(null + 1);
+                document.writeln(undefined + 1);
+         </script>
+</body>
+</html>

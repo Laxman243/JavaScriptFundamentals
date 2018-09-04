@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        
+        var a={
+
+"name": "Bizruntime",
+"location": "bangalore",
+"services": {
+    "itservice": "software",
+    "employee": [{
+            "FirstEmployee": "laxman",
+            "SecondEmployee": "ved"
+        },
+        {
+            "FirstEmployee": "Harsh",
+            "SecondEmployee": "abc"
+        }
+    ]
+}
+
+};
+       /* var Company = {
+
+            name : "Bizruntime",
+            location : "bangalore",
+            services : {
+                itservice : "software",
+                    employee : [{ "FirstEmployee" : "laxman", "SecondEmployee" : "ved"},
+                                {"FirstEmployee" : "Harsh", "SecondEmployee" : "abc", "salary":["Fiesta", "Focus", "Mustang"]}
+                                ]}
+
+        };   */
+        for(i in a.services.employee)
+         document.writeln(a.services.employee[i].FirstEmployee);
+      
+
+    </script>
+</body>
+</html>

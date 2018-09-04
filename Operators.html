@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    'use strict';
+    let x = 1;
+    
+    x = -x;
+    alert( x ); // -1, unary negation was applied
+    let x1 = 1, y = 3;
+    alert( y - x1 ); // 2, binary minus subtracts values
+
+    let s = "my" + "string";
+    alert(s); // mystring
+
+    alert( '1' + 2 ); // "12"
+    alert( 2 + '1' ); // "21"
+
+    alert(2 + 2 + '1' ); // "41" and not "221"
+
+    alert( 2 - '1' ); // 1
+    alert( '6' / '2' ); // 3
+
+    let x2 = 1;
+    alert( +x2 ); // 1
+
+    let y1 = -2;
+    alert( +y1 ); // -2
+
+    // Converts non-numbers
+    alert( +true ); // 1    
+    alert( +"" );   // 0
+
+    let apples = "2";
+    let oranges = "3";
+
+    alert( apples + oranges ); // "23", the binary plus concatenates strings
+
+    let apples1 = "2";
+    let oranges1 = "3";
+
+    // both values converted to numbers before the binary plus
+    alert( +apples1 + +oranges1 ); // 5
+
+    // the longer variant
+    // alert( Number(apples) + Number(oranges) ); // 5
+
+    let x3 = 2 * 2 + 1;
+
+    alert( x3 ); // 5
+
+    let a, b, c;
+
+    a = b = c = 2 + 2;
+
+    alert( a ); // 4
+    alert( b ); // 4
+    alert( c ); // 4
+
+    let a1 = 1;
+    let b1 = 2;
+
+    let c1 = 3 - (a1 = b1 + 1);
+
+    alert( a1 ); // 3
+    alert( c1 ); // 0
+
+    alert("Exponential starts");
+    alert( 2 ** 2 ); // 4  (2 * 2)
+    alert( 2 ** 3 ); // 8  (2 * 2 * 2)
+    alert( 2 ** 4 ); // 16 (2 * 2 * 2 * 2)
+
+    alert("Remender Starts");
+    alert( 5 % 2 ); // 1 is a remainder of 5 divided by 2
+    alert( 8 % 3 ); // 2 is a remainder of 8 divided by 3
+    alert( 6 % 3 ); // 0 is a remainder of 6 divided by 3
+  </script>
+</body>
+
+</html>

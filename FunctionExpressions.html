@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FunctionExpression</title>
+</head>
+<body>
+    <script>
+        /*
+            function sayHi()
+            {
+                alert('hello');
+            }
+        alert(sayHi);
+        */
+    /*
+        let func1 = function()
+        {
+            alert('hello');
+        }
+        
+        alert(func1);
+        */
+
+       alert("Function Call Back");
+/*
+       function ask(question , yes , no)
+       {
+           if (confirm(question))
+           {
+               yes();
+           }
+           else
+           {
+               no();
+           }
+       }
+       function showOk()
+       {
+           alert("you agreed");
+       }
+       function showCancel()
+       {
+           alert("you cancell the execution ...");
+       }
+
+      prompt(ask('do you agree?', showOk , showCancel));
+      
+      function ask(question, yes, no) {
+      if (confirm(question)) yes()
+      else no();
+    }
+    
+    ask(
+      "Do you agree?",
+      function() { alert("You agreed."); },
+      function() { alert("You canceled the execution."); }
+    );
+    */
+    function ask(question, yes, no) {
+    if (confirm(question)) yes()
+    else no();  
+        }
+
+        ask(
+            "Do you agree?",
+            () => alert("You agreed."),
+             () => alert("You canceled the execution.")
+        );
+    </script>
+</body>
+</html>
